@@ -329,3 +329,166 @@ h1, h2, h3 {
       font-size: 1.4rem;
     }
   }
+
+  /*Restaurant*/
+
+  .restaurants {
+    padding: 55px 20px 45px;
+    background-color: whitesmoke;
+  }
+  .restaurants h2 {
+    margin-bottom: 22px;
+  }
+  @media screen and (min-width: 600px) {
+    .restaurants {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    .restaurants .restaurants_tableau {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 100%;
+    }
+    .restaurants h2 {
+      font-size: 1.9rem;
+      margin-bottom: 30px;
+    }
+    .restaurants h2::before, .restaurants h2::after {
+      content: "";
+      display: inline-block;
+      background-color: #9356DC;
+      height: 2px;
+      width: 75px;
+      vertical-align: middle;
+      margin: 0 10px;
+    }
+  }
+  
+  .restaurants_visualisation {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 250px;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 18px;
+    -webkit-box-shadow: 0 3px 8px #c2c2c2;
+            box-shadow: 0 3px 8px #c2c2c2;
+  }
+  .restaurants_visualisation_image {
+    height: 70%;
+    position: relative;
+  }
+  .restaurants_visualisation_image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants_visualisation_image .new {
+    position: absolute;
+    right: 12px;
+    top: 13px;
+    background-color: #99E2D0;
+    color: #32b091;
+    padding: 6px 11px;
+    border-radius: 1px;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  .restaurants_visualisation__description {
+    height: 30%;
+    background-color: #fff;
+  }
+  .restaurants_visualisation__description .descriptionText {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-left: 13px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.1rem;
+  }
+  .restaurants_visualisation__description .descriptionText .restaurantName {
+    margin: 0;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .restaurants_visualisation__description .descriptionText .restaurantName + p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  .restaurants_visualisation__description .descriptionHeart {
+    width: 77px;
+  }
+  .restaurants_visualisation__description .descriptionHeart .emptyHeart {
+    font-size: 1.7rem;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: color 150ms 50ms ease;
+    -o-transition: color 150ms 50ms ease;
+    transition: color 150ms 50ms ease;
+  }
+  .restaurants_visualisation__description .descriptionHeart .emptyHeart:hover {
+    color: transparent;
+  }
+  .restaurants_visualisation__description .descriptionHeart .emptyHeart:hover > .fullHeart {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+  .restaurants_visualisation__description .descriptionHeart .fullHeart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -o-linear-gradient(280deg, #FF79DA, #9356DC);
+    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform 150ms 50ms ease-in-out;
+    transition: -webkit-transform 150ms 50ms ease-in-out;
+    -o-transition: transform 150ms 50ms ease-in-out;
+    transition: transform 150ms 50ms ease-in-out;
+    transition: transform 150ms 50ms ease-in-out, -webkit-transform 150ms 50ms ease-in-out;
+  }
+  .restaurants_visualisation__description .descriptionHeart .emptyHeart {
+    margin: auto;
+  }
+  @media screen and (min-width: 600px) {
+    .restaurants_visualisation {
+      width: 48%;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .restaurants_visualisation {
+      height: 350px;
+    }
+    .restaurants_visualisation_image {
+      height: 75%;
+    }
+    .restaurants_visualisation__description {
+      height: 25%;
+    }
+  }
