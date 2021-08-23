@@ -153,3 +153,179 @@ h1, h2, h3 {
       width: 100vw;
     }
   }
+
+  /*Fonctionnement étapes*/
+
+  .operation {
+    padding: 50px 20px 65px;
+  }
+  @media screen and (min-width: 600px) {
+    .operation {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+    .operation h2 {
+      font-size: 1.9rem;
+    }
+    .operation h2::before, .operation h2::after {
+      content: "";
+      display: inline-block;
+      background-color: #9356DC;
+      height: 2px;
+      width: 75px;
+      vertical-align: middle;
+      margin: 0 10px;
+    }
+  }
+  .operation h2 {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 600px) {
+    .operation {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-bottom: 45px;
+    }
+    .operation h2 {
+      font-size: 1.9rem;
+    }
+    .operation h2::before, .operation h2::after {
+      content: "";
+      display: inline-block;
+      background-color: #9356DC;
+      height: 2px;
+      width: 75px;
+      vertical-align: middle;
+      margin: 0 10px;
+    }
+  }
+  
+  .operations_tableau {
+    width: 100%;
+  }
+  @media screen and (min-width: 600px) {
+    .operations_tableau {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .operations_tableau {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+    }
+  }
+  
+  .operations_tableau {
+    width: 100%;
+  }
+  @media screen and (min-width: 600px) {
+    .operations_tableau {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .operations_tableau {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+    }
+  }
+  
+  .etape {
+    height: 72px;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .etape_nombre {
+    background-color: #9356DC;
+    height: 24px;
+    width: 24px;
+    color: #fff;
+    border-radius: 1rem;
+    z-index: 2;
+    font-size: 0.9rem;
+  }
+  .etape_nombre span {
+    margin: auto;
+  }
+  .etape_texte {
+    position: relative;
+    left: -12px;
+    background-color: whitesmoke;
+    border-radius: 1.1rem;
+    width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    -webkit-box-shadow: 0 3px 8px #c2c2c2;
+            box-shadow: 0 3px 8px #c2c2c2;
+  }
+  .etape_texte i {
+    width: 21px;
+    color: #7D7D7D;
+    margin: 0 25px 0 30px;
+    font-size: 1.2rem;
+  }
+  .etape_texte:hover {
+    background-color: #f4eefc;
+  }
+  .etape_texte:hover i {
+    color: #9356DC;
+  }
+  @media screen and (min-width: 600px) {
+    .etape {
+      width: 80%;
+    }
+    .etape_nombre {
+      font-size: 1.1rem;
+    }
+    .etape_texte {
+      font-size: 1.2rem;
+    }
+    .etape_texte i {
+      font-size: 1.4rem;
+    }
+  }
