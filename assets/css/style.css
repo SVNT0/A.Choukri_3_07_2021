@@ -101,6 +101,43 @@ h1, h2, h3 {
       font-size: 1.2rem;
     }
   }
+
+  .bouton {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: inline-block;
+    height: 50px;
+    padding: 0 49px;
+    border-radius: 1.5rem;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: -o-linear-gradient(280deg, #FF79DA, #a16be0);
+    background: linear-gradient(170deg, #FF79DA, #a16be0);
+    -webkit-box-shadow: 0 3px 8px #c2c2c2;
+            box-shadow: 0 3px 8px #c2c2c2;
+    cursor: pointer;
+  }
+
+  .bouton a {
+    color: #fff;
+  }
+  
+  .bouton:hover {
+    background: -o-linear-gradient(280deg, #ffa2e5, #a978e3);
+    background: linear-gradient(170deg, #ffa2e5, #a978e3);
+    -webkit-box-shadow: 0 3px 8px darkgray;
+            box-shadow: 0 3px 8px darkgray;
+  }
+  @media screen and (min-width: 600px) {
+    .bouton {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+  }
   
   .bouton-explore {
     padding: 15px 22px;
@@ -605,4 +642,172 @@ h1, h2, h3 {
     .restaurant .menu {
       width: 32%;
     }
+  }
+
+  /*Menu des restaurants : plats, entrées et desserts*/
+
+  .plats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #fff;
+    margin-top: 14px;
+    border-radius: 1rem;
+    overflow: hidden;
+    -webkit-box-shadow: 0 3px 8px #c2c2c2;
+            box-shadow: 0 3px 8px #c2c2c2;
+    padding: 0;
+    position: relative;
+    opacity: 0;
+  }
+  .plats_texte {
+    width: 80%;
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+    -webkit-transition: width 300ms 100ms linear;
+    -o-transition: width 300ms 100ms linear;
+    transition: width 300ms 100ms linear;
+    padding: 13px 0 13px 12px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .plats_texte .plats_nom {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    white-space: nowrap;
+  }
+  .plats_texte p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 0.95rem;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+  }
+  .plats_prix {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    color: #363636;
+    font-weight: 700;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+            transform-origin: right;
+    -webkit-transition: -webkit-transform 300ms 100ms linear;
+    transition: -webkit-transform 300ms 100ms linear;
+    -o-transition: transform 300ms 100ms linear;
+    transition: transform 300ms 100ms linear;
+    transition: transform 300ms 100ms linear, -webkit-transform 300ms 100ms linear;
+  }
+  .plats .animation_validation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #99E2D0;
+    width: 72px;
+    -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 300ms 100ms linear;
+    transition: -webkit-transform 300ms 100ms linear;
+    -o-transition: transform 300ms 100ms linear;
+    transition: transform 300ms 100ms linear;
+    transition: transform 300ms 100ms linear, -webkit-transform 300ms 100ms linear;
+  }
+  .plats .animation_validation .animation_icone {
+    color: #fff;
+    font-size: 1.6rem;
+    margin: auto;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: -webkit-transform 300ms 100ms linear;
+    transition: -webkit-transform 300ms 100ms linear;
+    -o-transition: transform 300ms 100ms linear;
+    transition: transform 300ms 100ms linear;
+    transition: transform 300ms 100ms linear, -webkit-transform 300ms 100ms linear;
+  }
+  .plats:hover {
+    cursor: pointer;
+  }
+  .plats:hover plats__text {
+    width: 60%;
+  }
+  .plats:hover plats__text .plats_nom, plats:hover plats__text p {
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+  }
+  .plats:hover .animation_validation {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  .plats:hover .animation_icone {
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  .plats:hover .plats_prix {
+    -webkit-transform: translateX(-72px);
+        -ms-transform: translateX(-72px);
+            transform: translateX(-72px);
+  }
+  @-webkit-keyframes menu-load {
+    0% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+    }
+    75% {
+      opacity: 0.5;
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes menu-load {
+    0% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+    }
+    75% {
+      opacity: 0.5;
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      opacity: 1;
+    }
+  }
+  .plats:nth-of-type(1) {
+    -webkit-animation: menu-load 800ms 200ms forwards;
+            animation: menu-load 800ms 200ms forwards;
+  }
+  .plats:nth-of-type(2) {
+    -webkit-animation: menu-load 800ms 400ms forwards;
+            animation: menu-load 800ms 400ms forwards;
+  }
+  .plats:nth-of-type(3) {
+    -webkit-animation: menu-load 800ms 600ms forwards;
+            animation: menu-load 800ms 600ms forwards;
+  }
+  .plats:nth-of-type(4) {
+    -webkit-animation: menu-load 800ms 800ms forwards;
+            animation: menu-load 800ms 800ms forwards;
   }
