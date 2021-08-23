@@ -330,7 +330,7 @@ h1, h2, h3 {
     }
   }
 
-  /*Restaurant*/
+  /*Restaurant - Index principal*/
 
   .restaurants {
     padding: 55px 20px 45px;
@@ -490,5 +490,119 @@ h1, h2, h3 {
     }
     .restaurants_visualisation_description {
       height: 25%;
+    }
+  }
+
+  /*Restaurants - page restaurants*/
+
+  .main {
+    background-color: #F5F5F5;
+  }
+  .restaurantPicture {
+    height: 250px;
+  }
+  .restaurantPicture_la_palette_du_gout {
+    background: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center/cover;
+  }
+  .restaurantPicture_la_note_enchantee {
+    background: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg") center/cover;
+  }
+  .restaurantPicture_a_la_francaise {
+    background: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") center/cover;
+  }
+  .restaurantPicture_le_delice_des_sens {
+    background: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") center/cover;
+  }
+  
+  .restaurant {
+    border-radius: 2rem 2rem 0 0;
+    padding: 30px 14px 40px;
+    background-color: #F5F5F5;
+    -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  .restaurant h2 {
+    font-family: "Shrikhand", cursive;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .restaurant h3 {
+    margin: 30px 0 0 6px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .restaurant h3::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 40px;
+    background-color: #99E2D0;
+    margin-top: 5px;
+  }
+  .restaurant_nom {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-right: 20px;
+  }
+  .restaurant_nom .emptyHeart {
+    font-size: 1.7rem;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: color 150ms 50ms ease;
+    -o-transition: color 150ms 50ms ease;
+    transition: color 150ms 50ms ease;
+  }
+  .restaurant_nom .emptyHeart:hover {
+    color: transparent;
+  }
+  .restaurant_nom .emptyHeart:hover > .fullHeart {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+  .restaurant_nom .fullHeart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -o-linear-gradient(280deg, #FF79DA, #9356DC);
+    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform 150ms 50ms ease-in-out;
+    transition: -webkit-transform 150ms 50ms ease-in-out;
+    -o-transition: transform 150ms 50ms ease-in-out;
+    transition: transform 150ms 50ms ease-in-out;
+    transition: transform 150ms 50ms ease-in-out, -webkit-transform 150ms 50ms ease-in-out;
+  }
+  .restaurant .bouton {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+  }
+  @media screen and (min-width: 1024px) {
+    .restaurant {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+    }
+    .restaurant .restaurant_nom {
+      width: 100%;
+    }
+    .restaurant .menu {
+      width: 32%;
     }
   }
