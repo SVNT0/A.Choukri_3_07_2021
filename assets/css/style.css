@@ -398,7 +398,7 @@ h1, h2, h3 {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .restaurants_visualisation_image .new {
+  .restaurants_visualisation_image .Nouveau {
     position: absolute;
     right: 12px;
     top: 13px;
@@ -409,11 +409,11 @@ h1, h2, h3 {
     font-weight: 500;
     font-size: 0.9rem;
   }
-  .restaurants_visualisation__description {
+  .restaurants_visualisation_description {
     height: 30%;
     background-color: #fff;
   }
-  .restaurants_visualisation__description .descriptionText {
+  .restaurants_visualisation_description .descriptionTexte {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -427,20 +427,20 @@ h1, h2, h3 {
             justify-content: center;
     font-size: 1.1rem;
   }
-  .restaurants_visualisation__description .descriptionText .restaurantName {
+  .restaurants_visualisation_description .descriptionTexte .restaurantNom {
     margin: 0;
     font-weight: 700;
     margin-bottom: 5px;
   }
-  .restaurants_visualisation__description .descriptionText .restaurantName + p {
+  .restaurants_visualisation_description .descriptionTexte .restaurantNom + p {
     margin: 0;
     font-weight: 300;
     font-size: 1rem;
   }
-  .restaurants_visualisation__description .descriptionHeart {
+  .restaurants_visualisation_description .descriptionCoeur {
     width: 77px;
   }
-  .restaurants_visualisation__description .descriptionHeart .emptyHeart {
+  .restaurants_visualisation_description .descriptionCoeur .emptyHeart {
     font-size: 1.7rem;
     cursor: pointer;
     position: relative;
@@ -448,15 +448,15 @@ h1, h2, h3 {
     -o-transition: color 150ms 50ms ease;
     transition: color 150ms 50ms ease;
   }
-  .restaurants_visualisation__description .descriptionHeart .emptyHeart:hover {
+  .restaurants_visualisation_description .descriptionCoeur .emptyHeart:hover {
     color: transparent;
   }
-  .restaurants_visualisation__description .descriptionHeart .emptyHeart:hover > .fullHeart {
+  .restaurants_visualisation_description .descriptionCoeur .emptyHeart:hover > .fullHeart {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
   }
-  .restaurants_visualisation__description .descriptionHeart .fullHeart {
+  .restaurants_visualisation_description .descriptionCoeur .fullHeart {
     position: absolute;
     top: 0;
     left: 0;
@@ -473,7 +473,7 @@ h1, h2, h3 {
     transition: transform 150ms 50ms ease-in-out;
     transition: transform 150ms 50ms ease-in-out, -webkit-transform 150ms 50ms ease-in-out;
   }
-  .restaurants_visualisation__description .descriptionHeart .emptyHeart {
+  .restaurants_visualisation_description .descriptionCoeur .emptyHeart {
     margin: auto;
   }
   @media screen and (min-width: 600px) {
@@ -488,7 +488,7 @@ h1, h2, h3 {
     .restaurants_visualisation_image {
       height: 75%;
     }
-    .restaurants_visualisation__description {
+    .restaurants_visualisation_description {
       height: 25%;
     }
   }
