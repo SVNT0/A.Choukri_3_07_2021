@@ -70,11 +70,30 @@ h1, h2, h3 {
   margin: 0;
 }
 
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .display {
   display: flex;
 }
 
 /*Header*/
+
+.header_page_acceuil {
+  height: 62px;
+}
+.header_page_acceuil img {
+  margin: auto;
+  width: 162px;
+}
+@media screen and (min-width: 600px) {
+  .header_page_acceuil img {
+    width: 210px;
+  }
+}
 
 .page {
     display: flex;
@@ -90,19 +109,6 @@ h1, h2, h3 {
     color: #9356DC;
     margin: auto;
     animation: load-spinner 3s 100ms linear backwards;
-  }
-
-.header_page_acceuil {
-    height: 62px;
-  }
-  .header_page_acceuil img {
-    margin: auto;
-    width: 162px;
-  }
-  @media screen and (min-width: 600px) {
-    .header_page_acceuil img {
-      width: 210px;
-    }
   }
 
   .lieu {
@@ -654,4 +660,38 @@ h1, h2, h3 {
   }
   .plats:nth-of-type(4) {
     animation: menu-load 800ms 800ms forwards;
+  }
+
+  /*Footer*/
+
+  footer {
+    background-color: #363636;
+    color: #fff;
+    padding: 20px 25px 30px;
+  }
+  footer h3 {
+    font-family: "Shrikhand", cursive;
+    font-weight: 400;
+    margin-bottom: 13px;
+    font-size: 1.1rem;
+  }
+  footer a {
+    color: #fff;
+    line-height: 1.7rem;
+  }
+  footer a i {
+    font-size: 0.8rem;
+    width: 9px;
+    margin-right: 10px;
+  }
+  @media screen and (min-width: 600px) {
+    footer h3 {
+      font-size: 1.3rem;
+    }
+    footer a {
+      font-size: 1.1rem;
+    }
+    footer a i {
+      font-size: 1rem;
+    }
   }
