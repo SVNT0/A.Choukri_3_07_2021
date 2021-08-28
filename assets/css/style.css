@@ -52,6 +52,7 @@ h1, h2, h3 {
   height: 62px;
   align-items: center;
   padding-right: 62px;
+  display: flex;
 }
 .header_pages a {
   width: 62px;
@@ -481,16 +482,20 @@ h1, h2, h3 {
     height: 250px;
   }
   .restaurantPicture_la_palette_du_gout {
-    background: url("file:///Users/Anaschoukri/Documents/Document%20formation%20Open%20Classrooms/Projet%203/Projet%203%20-%20Ohmyfood!/assets/images/restaurants/la_palette_du_gout.jpg") center/cover;
+    background: url("/assets/images/restaurants/la_palette_du_gout.jpg") center/cover;
+    height: 250px;
   }
   .restaurantPicture_la_note_enchantee {
-    background: url("file:///Users/Anaschoukri/Documents/Document%20formation%20Open%20Classrooms/Projet%203/Projet%203%20-%20Ohmyfood!/assets/images/restaurants/la_note_enchantee.jpg") center/cover;
+    background: url("/assets/images/restaurants/la_note_enchantee.jpg") center/cover;
+    height: 250px;
   }
   .restaurantPicture_a_la_francaise {
-    background: url("file:///Users/Anaschoukri/Documents/Document%20formation%20Open%20Classrooms/Projet%203/Projet%203%20-%20Ohmyfood!/assets/images/restaurants/a_la_francaise.jpg") center/cover;
+    background: url("/assets/images/restaurants/a_la_francaise.jpg") center/cover;
+    height: 250px;
   }
   .restaurantPicture_le_delice_des_sens {
-    background: url("file:///Users/Anaschoukri/Documents/Document%20formation%20Open%20Classrooms/Projet%203/Projet%203%20-%20Ohmyfood!/assets/images/restaurants/le_delice_des_sens.jpg") center/cover;
+    background: url("/assets/images/restaurants/le_delice_des_sens.jpg") center/cover;
+    height: 250px;
   }
   
   .restaurant {
@@ -522,6 +527,7 @@ h1, h2, h3 {
     justify-content: space-between;
     align-items: baseline;
     margin-right: 20px;
+    display: flex;
   }
   .restaurant_nom .emptyHeart {
     font-size: 1.7rem;
