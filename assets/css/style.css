@@ -22,9 +22,10 @@ h1, h2, h3 {
 }
 
 .logo {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 }
 
 .display {
