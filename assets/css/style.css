@@ -548,6 +548,8 @@ h1, h2, h3 {
     background: linear-gradient(170deg, #FF79DA, #9356DC);
     transform: scale(0);
     transition: transform 150ms 50ms ease-in-out;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .restaurant .bouton {
     display: block;
