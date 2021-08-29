@@ -482,19 +482,19 @@ h1, h2, h3 {
     height: 250px;
   }
   .restaurantPicture_la_palette_du_gout {
-    background: url("/assets/images/restaurants/la_palette_du_gout.jpg") center/cover;
+    background: url("https://raw.githubusercontent.com/SVNT0/SVNT0-Projet-3-Ohmyfood/Test/assets/images/restaurants/la_palette_du_gout.jpg") center/cover;
     height: 250px;
   }
   .restaurantPicture_la_note_enchantee {
-    background: url("/assets/images/restaurants/la_note_enchantee.jpg") center/cover;
+    background: url("https://raw.githubusercontent.com/SVNT0/SVNT0-Projet-3-Ohmyfood/Test/assets/images/restaurants/la_note_enchantee.jpg") center/cover;
     height: 250px;
   }
   .restaurantPicture_a_la_francaise {
-    background: url("/assets/images/restaurants/a_la_francaise.jpg") center/cover;
+    background: url("https://raw.githubusercontent.com/SVNT0/SVNT0-Projet-3-Ohmyfood/Test/assets/images/restaurants/a_la_francaise.jpg") center/cover;
     height: 250px;
   }
   .restaurantPicture_le_delice_des_sens {
-    background: url("/assets/images/restaurants/le_delice_des_sens.jpg") center/cover;
+    background: url("https://raw.githubusercontent.com/SVNT0/SVNT0-Projet-3-Ohmyfood/Test/assets/images/restaurants/le_delice_des_sens.jpg") center/cover;
     height: 250px;
   }
   
