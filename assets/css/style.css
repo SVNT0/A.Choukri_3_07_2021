@@ -179,6 +179,11 @@ h1, h2, h3 {
     cursor: pointer;
     }
 
+   .bouton-explore:hover{
+  background: linear-gradient(170deg, #ffa2e5, #a978e3);
+  box-shadow: 0 3px 8px darkgray;
+}
+
   @keyframes load-spinner {
     0% {
       transform: rotate(0deg);
