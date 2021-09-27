@@ -34,6 +34,11 @@ h1, h2, h3 {
 
 /*Header*/
 
+ .bouton-explore:hover{
+  background: linear-gradient(170deg, #ffa2e5, #a978e3);
+  box-shadow: 0 3px 8px darkgray;
+}
+
 .header_page_acceuil {
   height: 100px;
   display: flex;
@@ -178,11 +183,6 @@ h1, h2, h3 {
     box-shadow: 0 3px 8px #c2c2c2;
     cursor: pointer;
     }
-
-   .bouton-explore:hover{
-  background: linear-gradient(170deg, #ffa2e5, #a978e3);
-  box-shadow: 0 3px 8px darkgray;
-}
 
   @keyframes load-spinner {
     0% {
