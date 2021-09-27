@@ -637,10 +637,10 @@ h1, h2, h3 {
   .plats:hover {
     cursor: pointer;
   }
-  .plats:hover plats_texte {
+  .plats:hover .plats_texte {
     width: 60%;
   }
-  .plats:hover plats_texte .plats_nom, plats:hover plats_texte p {
+  .plats:hover .plats_texte .plats_nom, .plats:hover .plats_texte p {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
